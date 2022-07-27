@@ -29,3 +29,35 @@ const getComputerChoice = () => {
     };
 };
 console.log(getComputerChoice());
+
+//DETERMINE WINNER
+
+const determineWinner = (userChoice, computerChoice) =>{
+    if(userChoice === computerChoice){
+        return " This game is a tie!"
+    };
+
+    if( userChoice === 'rock'){
+        if(computerChoice === 'paper'){
+            return 'Sorry, Computer won!'
+        }else {
+            return 'Congratulations, You won!'
+        };
+    };
+    
+    if(userChoice === 'paper'){
+        if(computerChoice === 'scissors'){
+            return 'Sorry, Computer won!'
+        } else{
+           return 'congratulations, You won!'
+        };
+    };
+
+    if(userChoice === 'scissors'){
+        if(computerChoice === 'rock'){
+            return 'Sorry, Computer won'
+        }
+    }else{
+        return 'congratulations, You won!'
+     };
+};
