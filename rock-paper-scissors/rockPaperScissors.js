@@ -60,4 +60,8 @@ const determineWinner = (userChoice, computerChoice) =>{
     }else{
         return 'congratulations, You won!'
      };
+
+     if (userChoice === 'bomb'){
+        return 'Congratulations, you won'
+     }
 };
