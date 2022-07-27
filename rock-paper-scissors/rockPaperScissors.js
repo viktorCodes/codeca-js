@@ -49,7 +49,7 @@ const determineWinner = (userChoice, computerChoice) =>{
         if(computerChoice === 'scissors'){
             return 'Sorry, Computer won!'
         } else{
-           return 'congratulations, You won!'
+           return 'Congratulations, You won!'
         };
     };
 
@@ -58,10 +58,21 @@ const determineWinner = (userChoice, computerChoice) =>{
             return 'Sorry, Computer won'
         }
     }else{
-        return 'congratulations, You won!'
+        return 'Congratulations, You won!'
      };
 
      if (userChoice === 'bomb'){
         return 'Congratulations, you won'
-     }
+     };
+};
+
+//PLAY GAME
+
+const playGame = () => {
+    const userChoice = getUserChoice('paper');
+    const computerChoice = getComputerChoice();
+
+    console.log('You threw: ' + userChoice);
+    console.log('The Computer threw: ' + computerChoice);
+    console.log(determineWinner(userChoice, computerChoice));
 };
