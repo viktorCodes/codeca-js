@@ -31,3 +31,18 @@ const getSleepHours = (day) =>{
                                         return 'Error!'
     };
 };
+
+//GET ACTUAL SLEEP HOURS
+
+const getActualSleepHours = () => 
+
+getSleepHours('monday') +
+getSleepHours('tuesday') +
+getSleepHours('wednesday') +
+getSleepHours('thursday') +
+getSleepHours('friday') +
+getSleepHours('saturday') +
+getSleepHours('sunday');
+
+console.log(getSleepHours('monday'));
+console.log(getActualSleepHours());
