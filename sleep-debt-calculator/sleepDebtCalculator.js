@@ -75,3 +75,5 @@ const calculateSleepDebt = () => {
         console.log('Error! something went wrong, check your code.');
     };
 };
+
+calculateSleepDebt();
