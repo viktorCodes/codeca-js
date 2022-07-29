@@ -33,8 +33,26 @@ const name = 'Nala';
 
 const logEvent = (name, event) => {
     console.log(`${name}'s event is: ${event}`);
-}
+};
 
-const logTime = (name, event) => {
+const logTime = (name, days) => {
     console.log(`${name}'s time to train is: ${days} days`);
-}
+};
+
+const event  = getRandEvent();
+const days = getTrainingDays(event);
+// Define a `name` variable. Use it as an argument after updating logEvent and logTime
+
+logEvent(name, event);
+logTime(name, days);
+
+
+
+
+
+
+
+
+
+
+
