@@ -24,4 +24,15 @@ const compareGuesses = (humanGuess, computerGuess, secretGuess) => {
     return humanDifference <= computerDifference
 }
 
-console.log(compareGuesses)
+console.log(compareGuesses());
+
+//UPDATE SCORE
+
+const updateScore = winner => {
+
+    if( winner === 'human'){
+        return humanScore++;
+    }else if( winner === 'computer' ){
+        return computerScore++;
+    }
+};
