@@ -40,4 +40,4 @@ const updateScore = winner => {
 //ADVANCE ROUND
 
 const advanceRound = () => 
-    currentRoundScore++;
+    currentRoundNumber++;
