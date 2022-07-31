@@ -7,3 +7,9 @@ let currentRoundNumber = 1;
 
 //GENERATE TARGET
 
+const generateTarget = () => {
+
+    return Math.floor(Math.random() * 10);
+}
+
+console.log(generateTarget());
