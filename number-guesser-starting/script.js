@@ -13,3 +13,15 @@ const generateTarget = () => {
 }
 
 console.log(generateTarget());
+
+//COMPARE GUESSES
+
+const compareGuesses = (humanGuess, computerGuess, secretGuess) => {
+
+    const humanDifference = Math.abs(secretGuess - humanGuess );
+    const computerDifference = Math.abs(secretGuess - computerGuess);
+
+    return humanDifference <= computerDifference
+}
+
+console.log(compareGuesses)
