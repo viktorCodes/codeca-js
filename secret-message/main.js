@@ -6,7 +6,7 @@ let secretMessage = ['Learning', 'is', 'not', 'about', 'what', 'you', 'get', 'ea
 
 secretMessage.pop();
 // LOG LENGTH OF ARRAY
-console.log(secretMessage.length());
+//console.log(secretMessage.length());
 
 //ADD STRINGS TO END OF ARRAY
 
@@ -15,3 +15,9 @@ secretMessage.push('to','program');
 //CHANGE WORD 'easily' TO 'right'
 
 secretMessage[7] = 'right';
+//console.log(secretMessage);
+
+//REMOVE FIRST STRING OF ARRAY
+
+secretMessage.shift();
+console.log(secretMessage);
