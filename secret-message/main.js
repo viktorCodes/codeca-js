@@ -4,10 +4,14 @@ let secretMessage = ['Learning', 'is', 'not', 'about', 'what', 'you', 'get', 'ea
 
 //REMOVE LAST STRING OF ARRAY
 
-secretMessage.pop()
+secretMessage.pop();
 // LOG LENGTH OF ARRAY
 console.log(secretMessage.length());
 
 //ADD STRINGS TO END OF ARRAY
 
 secretMessage.push('to','program');
+
+//CHANGE WORD 'easily' TO 'right'
+
+secretMessage[7] = 'right';
