@@ -5,3 +5,5 @@ let secretMessage = ['Learning', 'is', 'not', 'about', 'what', 'you', 'get', 'ea
 //REMOVE LAST STRING OF ARRAY
 
 secretMessage.pop()
+
+console.log(secretMessage.length())
