@@ -33,4 +33,4 @@ secretMessage.splice(6, 5, 'know');
 
 //PRINT SECRET MESSAGE
 
-console.log(secretMessage.join());
+console.log(secretMessage.join(' '));
