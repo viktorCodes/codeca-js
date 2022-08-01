@@ -20,4 +20,9 @@ secretMessage[7] = 'right';
 //REMOVE FIRST STRING OF ARRAY
 
 secretMessage.shift();
+//console.log(secretMessage);
+
+//ADD STRING TO FIRST INDEX OF ARRAY
+
+secretMessage.unshift();
 console.log(secretMessage);
