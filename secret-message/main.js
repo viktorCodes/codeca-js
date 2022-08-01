@@ -24,5 +24,9 @@ secretMessage.shift();
 
 //ADD STRING TO FIRST INDEX OF ARRAY
 
-secretMessage.unshift();
+secretMessage.unshift('Programming');
 console.log(secretMessage);
+
+//REMOVE THE STRINGS ['get', 'right', 'the', 'first', 'time'], AND REPLACE WITH THE SINGLE STRING 'know'.
+
+secretMessage.splice(6, 5, 'know')
