@@ -29,4 +29,8 @@ console.log(secretMessage);
 
 //REMOVE THE STRINGS ['get', 'right', 'the', 'first', 'time'], AND REPLACE WITH THE SINGLE STRING 'know'.
 
-secretMessage.splice(6, 5, 'know')
+secretMessage.splice(6, 5, 'know');
+
+//PRINT SECRET MESSAGE
+
+console.log(secretMessage.join());
