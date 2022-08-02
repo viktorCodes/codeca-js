@@ -12,6 +12,15 @@ const resultArray = [];
 
 for(let i = 0; i < input.length; i++){
     // console.log(`input is ${i}`);
+    //DOUBLE E'S AND U'S
+
+    if(input[i] === 'e'){
+        resultArray.push(input[i])
+    }
+
+    if(input[i] === 'u'){
+        resultArray.push(input[i])
+    }
 
     //CREATE NESTED FOR LOOP
     for( let v = 0; v < vowels.length; v++){
