@@ -35,4 +35,8 @@ for(let i = 0; i < input.length; i++){
 
 //PRINT/LOG RESULT ARRAY
 
-console.log(resultArray)
+//console.log(resultArray)
+
+//DECLARE VARIABLE THAT JOINS OUR RESULT ARRAY INTO A SINGLE STRING AND CAPITALIZES ALL LETTERS
+
+const resultString = resultArray.join('').toUpperCase()
