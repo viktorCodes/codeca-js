@@ -15,6 +15,11 @@ for(let i = 0; i < input.length; i++){
 
     //CREATE NESTED FOR LOOP
     for( let v = 0; v < vowels.length; v++){
-        console.log(`vowel is ${v}`);
+        //console.log(`vowel is ${v}`);
+
+        //COMPARE INPUT LETTER TO EVERY LETTER IN THE VOWELS ARRAY
+        if(input[i] === vowels[v]){
+            console.log(input[i])
+        }
     }
 }
