@@ -37,7 +37,10 @@ get todaysSpecial(){
 
 };
 
-//ASSIGN MEAL AND PRICE PROPERTIES
+//ASSIGN VALUES TO MEAL AND PRICE PROPERTIES
 
-menu.meal = 'Pizza',
-menu.price = 8
+menu.meal = 'Pizza';
+menu.price = 8;
+
+//LOG TODAYS SPECIAL TO CONSOLE
+console.log(menu.todaysSpecial);
