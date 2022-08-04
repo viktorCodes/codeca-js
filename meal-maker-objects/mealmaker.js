@@ -36,3 +36,8 @@ get todaysSpecial(){
 
 
 };
+
+//ASSIGN MEAL AND PRICE PROPERTIES
+
+menu.meal = 'Pizza',
+menu.price = 8
