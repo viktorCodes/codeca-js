@@ -37,6 +37,15 @@ const team = {
         this.players.push(player);
 
     },
+
+    addGame (newOpponent, newteamPoints, newOpponentPoints){
+        let game = {
+            opponent: newOpponent,
+            teamPoints: newteamPoints,
+            opponentPoints: newOpponentPoints
+        };
+        this.games.push(game);
+    }
 };
 
 team.addPlayer('Alison', 'Becker', 29);
