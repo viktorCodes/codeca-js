@@ -23,7 +23,7 @@ set price(priceToCheck) {
 
 //CREATE A GETTER METHOD
 
-get todaysSpeciel(){
+get todaysSpecial(){
     if(this._meal && this._price){
         return `Todays Special is ${this._meal} for $${this._price}!`
     } else {
