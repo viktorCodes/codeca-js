@@ -1,17 +1,27 @@
 // CREATE, RETRIEVE AND ADD INFORMATION ABT FAV SPORTS TEAM
 
-//POPULATING DATA
+
 
 const team = {
-//CREATE PLAYER AND GAME PROPERTIES
+//POPULATING DATA
     _players:[
         {firstName: 'Mohammed', lastName: 'Salah', age: 30},
         {firstName: 'Virgil', lastName: 'Van Dijk', age: 31},
         {firstName: 'Thiago', lastName: 'Alcantara', age: 32 }
     ],
     _games: [
-        {opponent: 'Manchester City', teamPoints: 92, opponentPoints: 93},
-        {opponent: 'Manchester United', teamPoints: 92, opponentPoints: 67 },
-        {opponent: 'Everton', teamPoints: 92, opponentPoints: 38  }
+        {opponent: 'Manchester City', teamPoints: 1, opponentPoints: 1},
+        {opponent: 'Manchester United', teamPoints: 3, opponentPoints: 0 },
+        {opponent: 'Everton', teamPoints: 3, opponentPoints: 0  }
     ],
+
+    //GETTING DATA
+
+    get players(){
+        return this._players;
+    },
+
+    get games(){
+        return this._games;
+    }
 }
