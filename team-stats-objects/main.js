@@ -23,5 +23,21 @@ const team = {
 
     get games(){
         return this._games;
-    }
-}
+    },
+
+    //ADDING DATA
+
+    addPlayer (newFirstName, newLastName, newAge){
+
+        let player = {
+            firstName: newFirstName,
+            lastName: newLastName,
+            age:  newAge
+        };
+        this.players.push(player);
+
+    },
+};
+
+team.addPlayer('Alison', 'Becker', 29);
+console.log(team.players)
