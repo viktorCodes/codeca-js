@@ -49,4 +49,7 @@ const team = {
 };
 
 team.addPlayer('Alison', 'Becker', 29);
-console.log(team.players)
+console.log(team.players);
+
+team.addGame('Tottenham Hotspur, 1, 1');
+console.log(team.games);
