@@ -19,7 +19,20 @@ set price(priceToCheck) {
     if(typeof priceToCheck === 'number'){
         return this._price = priceToCheck
     }
+},
+
+//CREATE A GETTER METHOD
+
+get todaysSpeciel(){
+    if(this._meal && this._price){
+        return `Todays Special is ${this._meal} for $${this._price}!`
+    } else {
+        return 'Meal and Price  not set correctly!'
+
+        
+    }
 }
 
 
-}
+
+};
