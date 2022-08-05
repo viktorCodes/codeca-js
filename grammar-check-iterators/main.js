@@ -18,3 +18,9 @@ storyWords.forEach((word) => {
 
 })
 console.log(count);
+
+//FILTERING WORDS
+
+storyWords = storyWords.filter((word) => {
+    return word !== unnecessaryWord;
+});
