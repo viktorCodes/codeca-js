@@ -47,5 +47,11 @@ storyWords[78] = 'really'
 let lengthCheck = storyWords.every((word) => {
     return word.length < 10
 });
-console.log(lengthCheck)
+console.log(lengthCheck);
+
+storyWords.forEach((word)  => {
+    word.length > 10 && console.log(word)
+});
+
+console.log(storyWords.join(' '))
   
