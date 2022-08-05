@@ -16,11 +16,18 @@ let count = 0;
 storyWords.forEach((word) => {
     count++;
 
-})
+});
 console.log(count);
 
 //FILTERING WORDS
 
 storyWords = storyWords.filter((word) => {
     return word !== unnecessaryWord;
+});
+
+//REPLACING WORDS
+
+storyWords = storyWords.map((word) => {
+
+    return word === misspelledWord ? 'beautiful' : word;
 });
