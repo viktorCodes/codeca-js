@@ -31,3 +31,13 @@ storyWords = storyWords.map((word) => {
 
     return word === misspelledWord ? 'beautiful' : word;
 });
+
+//FIND INDEX
+
+let badWordIndex = storyWords.findIndex((word) =>  { 
+    return word === badWord
+});
+console.log(badWordIndex);
+
+
+  
