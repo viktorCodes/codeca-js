@@ -34,4 +34,12 @@ const dogFactory = (name, breed, weight) => {
         set weight(newWeight) {
             this._weight = newWeight;
         },
-        
+        //Add two methods to your object: .bark() which returns ‘ruff! ruff!’ and .eatTooManyTreats() which should increment the weight property by 1.
+        bark() {
+            return 'ruff! ruff!'
+        },
+        eatTooManyTreats() {
+            this._weight++
+        }
+    }
+}
