@@ -14,6 +14,24 @@ const dogFactory = (name, breed, weight) => {
         _name: name,
         _breed: breed,
         _weight: weight,
+
+        //Add getters and setters for each of the three properties and change the property names to have an underscore prepended.
         get name() {
             return this._name;
         },
+        set name(newName) {
+            this._name = newName;
+        },
+        get breed() {
+            return this._breed;
+        },
+        set breed(newBreed) {
+            this._breed = newBreed;
+        },
+        get weight() {
+            return this._weight;
+        },
+        set weight(newWeight) {
+            this._weight = newWeight;
+        },
+        
