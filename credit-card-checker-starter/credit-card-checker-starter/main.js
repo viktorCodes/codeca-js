@@ -74,7 +74,7 @@ console.log(findInvalidCards(batch)); // test what mystery numbers are
 
 //Create Invalid credit card number companies function
 
-function InvalidCardCompanies (invalidBatch){
+function idInvalidCardCompanies (invalidBatch){
     const companies = [];
 
     for(let i = 0; i < invalidBatch.length; i++) {
@@ -112,7 +112,10 @@ function InvalidCardCompanies (invalidBatch){
     return companies;
 }
 
-
+//Test Functions
+console.log(idInvalidCardCompanies([invalid1])); // should print visa
+console.log(idInvalidCardCompanies([invalid2])); // should print masterd card
+console.log(idInvalidCardCompanies(batch)); // Find out which companies have mailed out invalid cards
 
 
 
