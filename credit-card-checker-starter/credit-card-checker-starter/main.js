@@ -67,6 +67,11 @@ function findInvalidCards(cards){
     return invalid;
 }
 
+//Test Functions
+console.log(findInvalidCards([valid1, valid2, valid3, valid4, valid5])); //shouldn't print anything
+console.log(findInvalidCards([invalid1, invalid2, invalid3, invalid4, invalid5])); //should print all the  numbers
+console.log(findInvalidCards(batch)); // test what mystery numbers are
+
 
 
 
