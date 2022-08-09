@@ -41,7 +41,15 @@ const validateCred = (numArr) => {
         total += currValue;
     }
     return total % 10 === 0;
-}
+};
+
+
+//Test Functions
+
+console.log(validateCred(valid1)); // should print true
+console.log(validateCred(invalid1)); // should print false
+
+
 
 
 
