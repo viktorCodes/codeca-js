@@ -23,7 +23,7 @@ const mystery5 = [4, 9, 1, 3, 5, 4, 0, 4, 6, 3, 0, 7, 2, 5, 2, 3]
 const batch = [valid1, valid2, valid3, valid4, valid5, invalid1, invalid2, invalid3, invalid4, invalid5, mystery1, mystery2, mystery3, mystery4, mystery5]
 
 
-// Add your functions below:
+// Create validate credit card function
 
 const validateCred = (numArr) => {
 
@@ -72,8 +72,45 @@ console.log(findInvalidCards([valid1, valid2, valid3, valid4, valid5])); //shoul
 console.log(findInvalidCards([invalid1, invalid2, invalid3, invalid4, invalid5])); //should print all the  numbers
 console.log(findInvalidCards(batch)); // test what mystery numbers are
 
+//Create Invalid credit card number companies function
+
+function InvalidCardCompanies (invalidBatch){
+    const companies = [];
+
+    for(let i = 0; i < invalidBatch.length; i++) {
+
+        switch(invalidBatch[i][0]){
+
+            case 3: 
+            if(companies.indexOf('Amex') === -1){
+              companies.push('Amex');
+            }
+            break;
+            case 4:
+                if(companies.indexOf('Visa') === -1){
+                    companies.push('Visa');
+                }
+                break;
+                case 5:
+                    if(companies.indexOf('Mastercard') === -1){
+                        companies.push('Mastercard');
+                    }
+                    break;
+
+                    case 6:
+                        if(companies.indexOf('Discover') === -1){
+                            companies.push('Discover');
+                        }
+                        break;
+
+                        default:
+                            console.log('Company not found');
+        }
 
 
+    }
+    return companies;
+}
 
 
 
