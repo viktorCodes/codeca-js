@@ -50,6 +50,22 @@ console.log(validateCred(valid1)); // should print true
 console.log(validateCred(invalid1)); // should print false
 
 
+//Create Invalid Cards Function
+
+
+function findInvalidCards(cards){
+    const invalid = [];
+
+    for( let i = 0; i < cards.length; i++){
+        
+        let currCred = cards[i];
+
+        if(!validateCred(currCred)) {
+            invalid.push(currCred);
+        }
+    }
+    return invalid;
+}
 
 
 
