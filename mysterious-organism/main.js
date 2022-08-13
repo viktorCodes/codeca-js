@@ -55,4 +55,18 @@ const pAequorFactory = (specimanNum, dna) => {
         },
     }
 
+};
+
+//surviving specimen
+
+const survivingSpecimen = [];
+let idCounter = 1;
+
+while(survivingSpecimen.length < 30) {
+    let newOrg = pAequorFactory(idCounter, mockUpStrand());
+    if(newOrg.willLikelySurvive()){
+        survivingSpecimen.push(newOrg);
+    }
+    idCounter++;
 }
+
