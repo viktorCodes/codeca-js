@@ -70,3 +70,4 @@ while(survivingSpecimen.length < 30) {
     idCounter++;
 }
 
+console.log(survivingSpecimen)
