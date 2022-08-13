@@ -42,7 +42,11 @@ const pAequorFactory = (specimanNum, dna) => {
                     return acc;
                 }
             }, 0);
-        }
+            const percentageOfDNAShared = (similarities / this.dna.length) * 100;
+            const percentageTo2Deci = percentOfDNAshared.toFixed(2);
+            console.log(`${this.specimanNum} and ${otherOrg.specimanNum} have ${percentageTo2Deci}% DNA in common.`);
+        },
+        
     }
 
 }
