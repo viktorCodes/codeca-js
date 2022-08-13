@@ -42,11 +42,17 @@ const pAequorFactory = (specimanNum, dna) => {
                     return acc;
                 }
             }, 0);
-            const percentageOfDNAShared = (similarities / this.dna.length) * 100;
+            const percentOfDNAshared = (similarities / this.dna.length) * 100;
             const percentageTo2Deci = percentOfDNAshared.toFixed(2);
             console.log(`${this.specimanNum} and ${otherOrg.specimanNum} have ${percentageTo2Deci}% DNA in common.`);
         },
-        
+        //will likely survive
+
+        willLikelySurvive () {
+            const cOrG = this.dna.filter(el => el === "C" || el === "G");
+            return cOrG.length / this.dna.length >= 0.6;
+
+        },
     }
 
 }
