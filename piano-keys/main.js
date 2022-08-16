@@ -1,0 +1,1 @@
+// The keys and notes variables store the piano keys
