@@ -26,3 +26,9 @@ let eventAssignment = function(note) {
 
     // Write a loop that runs the array elements through the function
 notes.forEach(eventAssignment);
+
+// These variables store the buttons that progress the user through the lyrics
+let nextOne = document.getElementById('first-next-line');
+let nextTwo = document.getElementById('second-next-line');
+let nextThree = document.getElementById('third-next-line');
+let startOver = document.getElementById('fourth-next-line');
