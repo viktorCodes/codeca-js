@@ -23,3 +23,6 @@ let eventAssignment = function(note) {
       keyReturn(event);
     }
     };
+
+    // Write a loop that runs the array elements through the function
+notes.forEach(eventAssignment);
