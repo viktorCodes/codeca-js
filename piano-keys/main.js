@@ -12,4 +12,14 @@ const keyPlay = function (event) {
   }
   const keyReturn = function(event){
     event.target.style.backgroundColor = '';
-  }
+  };
+
+  // Write a named function with event handler properties
+let eventAssignment = function(note) {
+    note.onmousedown = function () {
+       keyPlay(event);
+    }
+    note.onmouseup = function(){
+      keyReturn(event);
+    }
+    };
