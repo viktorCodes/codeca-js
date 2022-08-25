@@ -68,7 +68,7 @@ html {
   nav a {
     text-decoration: none;
     color: inherit;
-    transition: color 50ms ease-in 79ms;
+    transition: color 800ms ease-in 509ms;
   }
   
   nav a:hover,
