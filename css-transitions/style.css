@@ -196,6 +196,9 @@ html {
     opacity: 0;
     font-family: "Proza Libre", sans-serif;
     font-size: 1.5rem;
+    transition-property: top, opacity;
+    transition-duration: 200ms, 300ms;
+    transition-delay: 0s, 1000ms;
   
   }
   
