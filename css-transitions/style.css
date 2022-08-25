@@ -238,7 +238,7 @@ html {
     width: 13rem;
     padding: 0 2rem;
     background-color: #639eff;
-    opacity: 0.3;
+    transition: 0.3 100ms ease-out 90ms;
     font-size: 3rem;
     font-weight: bold;
     text-decoration: none;
