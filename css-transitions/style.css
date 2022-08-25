@@ -238,7 +238,8 @@ html {
     width: 13rem;
     padding: 0 2rem;
     background-color: #639eff;
-    transition: 0.3 100ms ease-out 90ms;
+    opacity: 0.3;
+    transition: opacity 500ms ease-in-out 300ms;
     font-size: 3rem;
     font-weight: bold;
     text-decoration: none;
